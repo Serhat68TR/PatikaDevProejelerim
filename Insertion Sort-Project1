@@ -1,0 +1,32 @@
+Proje 1
+[22,27,16,2,18,6] -> Insertion Sort
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+ÇÖZÜM : 
+1) 22 ile 2'nin yerleri değiştirilir. (n'e eşittir.) -> [2 |,27,16,22,18,6] 
+2) 27 ile 6'nın yerleri değiştirilir. (n-1'e eşittir.) -> [2,6 |,16,22,18,27]
+3) 16'nın sırası doğru olduğu için yer değiştirmez,bu sebeple sadece elemanı azaltmak yeterli. (n-2'ye eşittir.) -> [2,6,16 |,22,18,27]
+4) 18 ile 22'nin yerleri değiştirilir. (n-3'e eşittir.) -> [2,6,16,18 |,22,27]
+5) 22'nin sırası doğru olduğu için yer değiştirmez,bu sebeple sadece elemanı azaltmak yeterli. (n-4'e eşittir.) -> [2,6,16,18,22 |,27]
+6) 27'nin sırası doğru olduğu için yer değiştirmez,bu sebeple sadece elemanı azaltmak yeterli. (1'e eşittir.) -> [2,6,16,18,22,27]
+
+
+Big-O gösterimini yazınız.
+ÇÖZÜM: 
+O(n^2)
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+1)Average case: Aradığımız sayının ortada olması
+2)Worst case: Aradığımız sayının sonda olması
+3)Best case: Aradığımız sayının dizinin en başında olması.
+
+ÇÖZÜM : 
+Average case'e girer çünkü 18 ve 16 ortancadır.Biz de 18'i merak ettiğimiz için 1.case bizim için doğru olandır.
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+ÇÖZÜM : 
+1) 2 ile 7 yer değiştrilir ve ilk elemanı ekleriz. -> [2|,3,5,8,7,9,4,15,6]
+2) 3 en küçük olduğu için yer değişmez ve 2.eleman olarak eklenir. -> [2,3|,5,8,7,9,4,15,6]
+3) 5 ile 4 yer değişir. -> [2,3,4|,8,7,5,15,6]
+4) 8 ile 5 yer değişir. -> [2,3,4,5|,7,8,15,6]
